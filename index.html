@@ -144,6 +144,66 @@
             margin: 1.5rem 0;
             font-weight: 500;
         }
+
+        /* Bio Section */
+        .bio {
+            padding: 8rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .bio-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .bio-image {
+            flex: 0 0 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .bio-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .bio-content {
+            flex: 1;
+        }
+
+        .bio-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .bio-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .bio-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .bio-image {
+                flex: 0 0 auto;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        /* Services Section */
         .services {
             padding: 8rem 2rem;
             background-color: #f8f9fa;
@@ -388,6 +448,19 @@
             <p>Professional Financial Services for Your Business</p>
             <div class="tagline">"Your money must work for you, not the other way round"</div>
             <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section class="bio">
+        <div class="bio-container">
+            <div class="bio-image">
+                <img src="propic.jpg" alt="Lifa Nobanda">
+            </div>
+            <div class="bio-content">
+                <h2>Lifa Nobanda - Professional Bio</h2>
+                <p>Lifa Nobanda is an entrepreneur and consultant dedicated to financial empowerment and sustainable growth. As the founder of N.L Bookkeeping and Consultancy CC, he specializes in bookkeeping, tax, payroll, and business strategy services.</p>
+                <p>Outside of his professional work, Lifa is a committed social activist—advocating for cancer awareness, animal welfare, and community upliftment. His background reflects a deep passion for ethical business, clean energy solutions, and meaningful social impact.</p>
+            </div>
         </div>
     </section>
 
